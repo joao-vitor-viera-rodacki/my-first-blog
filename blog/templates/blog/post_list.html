@@ -1,23 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meu site</title>
-   
-    <style>
-        body {
-            background-color: rgb(34, 41, 46);
-        }
-        p {
-            color: bisque;
-        }
-    </style>
+<html>
+    <head>
+        <title>Blog Django Girls</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Blog Django Girls</a></h1>
+        </div>
 
-</head>
-<body>
-    <h1>Olá meu querido como vai você?</h1>
-    <p>Este é minha primeira pagina que criei no django !</p>
-</body>
+        {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+            
+        </div>
+        {% endfor %}
+    </body>
 </html>
