@@ -1,0 +1,9 @@
+Django==3.2.3
+  - asgiref [required: >=3.3.2,<4, installed: 3.3.4]
+  - pytz [required: Any, installed: 2021.1]
+  - sqlparse [required: >=0.2.2, installed: 0.4.1]
+environ==1.0
+gunicorn==20.1.0
+  - setuptools [required: >=3.0, installed: 56.0.0]
+psycopg2==2.8.6
+whitenoise==5.2.0
